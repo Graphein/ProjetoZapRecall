@@ -27,7 +27,7 @@ export const FlashcardApp = styled.div`
   color: white;
   font-family: Arial, sans-serif;
   width: 700px;
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
@@ -125,20 +125,18 @@ export const Progress = styled.div`
   width: 100%;
   background-color: white;
   color: #333;
-  border-radius: 8px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  min-height: 80px; /* Mesma altura mínima dos flashcards */
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-// Pergunta e Ícones
 export const QuestionView = styled.div`
-  background-color: ${(props) => props.bgColor || "white"};
+  background-color: ${(props) => props.$bgColor || "white"};
   color: #333;
   padding: 15px;
   border-radius: 8px;
@@ -164,7 +162,6 @@ export const QuestionView = styled.div`
     transform: scale(1.1);
   }
 `;
-
 
 export const QuestionImage = styled.img`
   width: 24px;

@@ -1,12 +1,29 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   body {
-    background-color: #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+  }
+
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
   }
 `;
 

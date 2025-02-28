@@ -39,7 +39,7 @@ const Flashcard = ({ card, onAnswer }) => {
       )}
 
       {stage === 'question' && (
-        <QuestionView bgColor="#ffffd4">
+        <QuestionView $bgColor="#ffffd4">
           <p>{card.question}</p>
           <img src={setaVirar} alt="Virar para resposta" onClick={handleFlip} />
         </QuestionView>
