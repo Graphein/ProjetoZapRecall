@@ -84,7 +84,7 @@ export const Flashcard = styled.div`
 
 // Visualização da resposta
 export const AnswerView = styled.div`
-  background-color: #ffffd4; /* Fundo amarelo quando mostra a resposta */
+  background-color: #ffffd4;
   color: #333;
   padding: 15px;
   border-radius: 8px;
@@ -138,7 +138,7 @@ export const Progress = styled.div`
 
 // Pergunta e Ícones
 export const QuestionView = styled.div`
-  background-color: white; /* Fundo branco para a pergunta */
+  background-color: ${(props) => props.bgColor || "white"};
   color: #333;
   padding: 15px;
   border-radius: 8px;
@@ -164,6 +164,7 @@ export const QuestionView = styled.div`
     transform: scale(1.1);
   }
 `;
+
 
 export const QuestionImage = styled.img`
   width: 24px;
